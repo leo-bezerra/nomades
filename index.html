@@ -2,70 +2,114 @@
 <html>
 
 <head>
-    <title>Curso HTML e CSS | Projeto: Site Cafeteria</title>
+    <meta charset="UTF-8">
+    <title>Curso HTML e CSS | Projeto: Nômades pelo mundo</title>
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="keywords" content="NÔMADES, VIAJANTES, VIAJAR">
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
 </head>
 
 <body>
 
-    <!--Exemplo comentário-->
+    <!-- Topo -->
+    <header>
+        <div class="logo">    
+            <img src="images/logonomade.png" alt="Logo do site">
+        </div>
+        <nav>
+         <div class="menu">    
+                <ul>
+                    <li>Quem somos</li>
+                    <li>Premiações</li>
+                    <li>Fale conosco</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <div id="container">
-        <header>
-            <h1>Conteúdo cafeteria - Aromi d'Italia</h1>
-        </header>
-        <main>
-            <article> 
-                <div>
-                    <h4>Institucional</h4>
-                </div>
-                <div>    
-                    <ul>
-                        <li>Quem somos</li>
-                        <li>Premiações</li>
-                        <li>Fale conosco</li>
-                    </ul>
-                </div>
-            </article> 
+<main>
+    <!-- Banner topo -->
+    <section class="bannertopo">
+        <div class="imagembanner">
+            <img src="images/bannertopo.png" alt="Imagem de um viajante com mochila em outro país">
+        </div>
+        <a class="botaobannertopo" href='#'><button>Por onde começar?</button></a>
+    </section>
 
-            <article>    
-                <div>
-                    <h4>Cafés</h4>
-                </div>
-                <div>
-                    <ul>
-                        <li>Tipos</li>
-                        <li>Receitas</li>
-                    </ul>
-                </div>
-            </article>
+    <!-- Vídeos -->
+    <section class="videos">
 
-            <article>
-                <div>
-                    <h4>Seja um franqueado</h4>
-                </div>
-                <div>
-                    <ul>
-                        <li>Contato</li>
-                    </ul>
-                </div>
-            </article>
+        <h2 class="titulo-principal">Vídeos</h1>
 
-            <article>
-                <div>
-                    <h4>Outros itens do menu.</h4>
-                </div>
-                <div>
-                    <ul>
-                        <li>Cardápio</li>
-                        <li>Blog</li>
-                    </ul>
-                </div>
-            </article>
-        </main>
-    </div>
+        <!-- Vídeo 1 -->
+        <div class="video1">
+            <video poster="images/capavideo1.jpg" alt="Capa vídeo duas pessoas no avião">
+                <source src="videos/video1.mp4" type="video/mp4">
+            </video>
+            <h3 class="titulo-videos">Título vídeo</h3>
+            <p class="texto-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dui ac sapien hendrerit lobortis sit amet ut nisi. Quisque sit amet lacus eu lacus feugiat pulvinar.</p>
+        </div>
+
+        <!-- Vídeo 2 -->
+        <div class="video2">
+            <video poster="images/capavideo2.jpg" alt="Capa vídeo pessoas passeando de mãos dadas em Roma">
+                <source src="videos/video2.mp4" type="video/mp4">
+            </video>
+            <h3 class="titulo-videos">Título vídeo 2</h3>
+            <p class="texto-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dui ac sapien hendrerit lobortis sit amet ut nisi. Quisque sit amet lacus eu lacus feugiat pulvinar.</p>
+        </div>
+
+        <!-- Vídeo 3 -->
+        <div class="video3">
+            <video poster="images/capavideo3.jpg" alt="Capa vídeo uma mulher estudando em um intercâmbio">
+                <source src="videos/video3.mp4" type="video/mp4">
+            </video>
+            <h3 class="titulo-videos">Título vídeo 3</h3>
+            <p class="texto-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dui ac sapien hendrerit lobortis sit amet ut nisi. Quisque sit amet lacus eu lacus feugiat pulvinar.</p>
+        </div>
+
+    </section>
+
+    <!-- Depoimentos -->
+
+    <section class="depoimentos">
+
+        <h2 class="titulo-principal">Depoimentos</h1>
+
+        <!-- Depoimento 1 -->
+        <div class="depoimento1">
+            <img src="images/depoi1.jpg" alt="Imagem rosto homem 30 anos">
+            <h3 class="titulo-depoimentos">Depoimento1</h3>
+            <p class="texto-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dui ac sapien hendrerit lobortis sit amet.</p>
+        </div>
+
+        <!-- Depoimento 2 -->
+        <div class="depoimento2">
+            <img src="images/depoi2.jpg" alt="Imagem rosto mulher 44 anos">
+            <h3 class="titulo-depoimentos">Depoimento2</h3>
+            <p class="texto-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dui ac sapien hendrerit lobortis sit amet.</p>
+        </div>
+
+        <!-- Depoimento 3 -->
+        <div class="depoimento3">
+            <img src="images/depoi3.jpg" alt="Imagem rosto jovem">
+            <h3 class="titulo-depoimentos">Depoimento3</h3>
+            <p class="texto-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dui ac sapien hendrerit lobortis sit amet.</p>
+        </div>
+
+    </section>
+</main>
+    <br>
+    <!-- Rodapé -->
+    <section class="footer">
+    <article>
+        <footer>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus dignissim ultricies.</p>
+        </footer>
+    </article>
+    </section>
+
 </body>
 
 </html>
