@@ -8,99 +8,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="NÔMADES, VIAJANTES, VIAJAR">
     <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Topo -->
-    <header>
+<!-- Topo -->
+<header class="area-menu">   
+    
+    <div class="menu-conteudos">
+        
         <div class="logo">    
             <img src="images/logonomade.png" alt="Logo do site">
         </div>
-        <nav>
-         <div class="menu">    
-                <ul>
-                    <li><a href="#" target="_self">Por onde começar?</a></li>
-                    <li><a href="#" target="_self">Dia a dia</a></li>
-                    <li><a href="#" target="_self">Vagas Remotas</a></li>
-                </ul>
-            </div>
+        
+        <nav class="menu">
+            <ul>
+                <li><a class="links" href="#" target="_self">Home</a></li>
+                <li><a class="links" href="#" target="_self">Por onde começar?</a></li>
+                <li><a class="links" href="#" target="_self">Dia a dia</a></li>
+                <li><a class="links" href="#" target="_self">Vagas Remotas</a></li>
+            </ul>
         </nav>
-    </header>
 
-<main>
-    <!-- Banner topo -->
-    <section>
-        <div class="imagembanner">
-            <img src="images/bannertopo.png" alt="Imagem de um viajante com mochila em outro país">
+        
+        <div class="buscar">
+            <form>
+                <input type="text" id="search" name="search" class="busca-form" placeholder="Busque pelo país desejado">
+                <input type="submit" value="Buscar">
+            </form>
         </div>
-        <a class="botaobannertopo" href='#'><button>Por onde começar?</button></a>
+
+    </div>
+
+</header>
+
+    <main>
+    <!-- Banner topo -->
+    <section class="area-banner">
+        
+        <div class="container-banner">
+            <img class="imagem-com-transparencia" src="images/banner-viajante.jpg" alt="Imagem de um viajante com mochila em outro país">
+        </div>
+
+        
+        <div class="conteudo-area-banner">
+            <h1>Por onde começar?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed sodales tortor, et condimentum erat. In ac velit a quam sagittis cursus. Aenean dignissim.</p>
+            <button>SAIBA MAIS</button>
+        </div>
     </section>
+
+
 
     <!-- Vídeos -->
-    <section>
-        <h2 class="titulo-principal">Vídeos</h1>
+    <section class="videos-area">
 
-        <!-- Vídeo 1 -->
-        <div class="video1">
-            <video poster="images/capavideo1.jpg" alt="Capa vídeo duas pessoas no avião">
-                <source src="videos/video1.mp4" type="video/mp4">
-            </video>
-            <h3 class="titulo-videos">Título vídeo</h3>
-            <p class="texto-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dui ac sapien hendrerit lobortis sit amet ut nisi. Quisque sit amet lacus eu lacus feugiat pulvinar.</p>
-        </div>
+        <div class="video-galeria">
 
-        <!-- Vídeo 2 -->
-        <div class="video2">
-            <video poster="images/capavideo2.jpg" alt="Capa vídeo pessoas passeando de mãos dadas em Roma">
-                <source src="videos/video2.mp4" type="video/mp4">
-            </video>
-            <h3 class="titulo-videos">Título vídeo 2</h3>
-            <p class="texto-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dui ac sapien hendrerit lobortis sit amet ut nisi. Quisque sit amet lacus eu lacus feugiat pulvinar.</p>
-        </div>
+            <h2 class="titulos-areas justificar-esquerda">Vídeos</h2>
+            <div class="linha"></div>
 
-        <!-- Vídeo 3 -->
-        <div class="video3">
-            <video poster="images/capavideo3.jpg" alt="Capa vídeo uma mulher estudando em um intercâmbio">
-                <source src="videos/video3.mp4" type="video/mp4">
-            </video>
-            <h3 class="titulo-videos">Título vídeo 3</h3>
-            <p class="texto-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dui ac sapien hendrerit lobortis sit amet ut nisi. Quisque sit amet lacus eu lacus feugiat pulvinar.</p>
+            <div class="video-item caixa">
+                <div class="video-player">
+                    <video poster="../nomades/images/ny.jpg" alt="Vista área cidade de Nova York">
+                    <source src="videos/video1.mp4" type="video/mp4">
+                    </video>
+                    <div class="player-icon"></div>
+                </div>
+                <h3 class="titulo-videos">Nova York, a cidade que não dorme</h3>
+                <p class="texto-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dui ac sapien hendrerit lobortis sit amet ut nisi. Quisque sit amet lacus eu lacus feugiat pulvinar.</p>
+                <a href="#" class="leia-mais">Leia mais <span class="arrow"><i class="fas fa-arrow-right"></i></span></a>
+            </div>
+            
+            
+            <div class="video-item caixa">
+                <div class="video-player">
+                    <video poster="../nomades/images/praia.jpg" alt="Homem jovem usando notebook na praia" class="video-player">
+                    <source src="videos/video2.mp4" type="video/mp4">
+                    </video>
+                    <div class="player-icon"></div>
+                </div>
+                <h3 class="titulo-videos">Desafios enfrentados no processo de adaptação</h3>
+                <p class="texto-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dui ac sapien hendrerit lobortis sit amet ut nisi. Quisque sit amet lacus eu lacus feugiat pulvinar.</p>
+                <a href="#" class="leia-mais">Leia mais <span class="arrow"><i class="fas fa-arrow-right"></i></span></a>
+            </div>
+    
+            <div class="video-item caixa">
+                <div class="video-player">
+                    <video poster="../nomades/images/npc.jpg" alt="Mulheres trabalhando em um café usando notebboks" class="video-player">
+                    <source src="videos/video3.mp4" type="video/mp4">
+                    </video>
+                    <div class="player-icon"></div>
+                </div>
+                <h3 class="titulo-videos">Comunidades brasileiras em países europeus</h3>
+                <p class="texto-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dui ac sapien hendrerit lobortis sit amet ut nisi. Quisque sit amet lacus eu lacus feugiat pulvinar.</p>
+                <a href="#" class="leia-mais">Leia mais <span class="arrow"><i class="fas fa-arrow-right"></i></span></a>
+            </div>
         </div>
+        
+        <div class="area-bto"><button>SAIBA MAIS</button></div>
+   
     </section>
 
+    <!-- Sobre -->
+
+    <section class="area-sobre">
+
+        <div class="left-sobre">
+            <img src="images/mochila.png" alt="Imagem de uma mochila" class="mochila-sobre">
+        </div>
+        <div class="conteudo-sobre">
+            <div class="right-sobre">
+                <h2 class="titu-sobre">Somos a principal comunidade dedicada ao estilo de vida nômade</h2>
+                <p>Unindo indivíduos apaixonados por essa estilo único e dinâmico de viver.</p>
+                <button>SAIBA MAIS</button>
+            </div>
+        </div>
+
+    </section>
+  
     <!-- Depoimentos -->
 
-    <section>
-        <h2 class="titulo-principal">Depoimentos</h1>
+    <section class="juntese">
 
-        <div class="depoimento1">
-            <img src="images/depoi1.jpg" alt="Imagem rosto homem 30 anos">
-            <h3 class="titulo-depoimentos">Depoimento1</h3>
-            <p class="texto-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dui ac sapien hendrerit lobortis sit amet.</p>
+        <div class="juntese-area">
+
+            <h2 class="titulos-areas">Junte-se a Nós</h2>     
+
+            <div class="box-usuario">
+                <img src="images/juntese/1.png" alt="Imagem usuário" class="img-usuario">
+                <div class="nome-usuario">Nome Usuário</div>
+                <div class="pais-usuario">Brasil</div>
+                <p class="texto-usuario">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
+            </div>
+
+            <div class="box-usuario">
+                <img src="images/juntese/2.png" alt="Imagem usuário" class="img-usuario">
+                <div class="nome-usuario">Nome Usuário</div>
+                <div class="pais-usuario">Brasil</div>
+                <p class="texto-usuario">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
+            </div>
+
+            <div class="box-usuario">
+                <img src="images/juntese/3.png" alt="Imagem usuário" class="img-usuario">
+                <div class="nome-usuario">Nome Usuário</div>
+                <div class="pais-usuario">Brasil</div>
+                <p class="texto-usuario">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
+            </div>
+
+            <div class="box-usuario">
+                <img src="images/juntese/4.png" alt="Imagem usuário" class="img-usuario">
+                <div class="nome-usuario">Nome Usuário</div>
+                <div class="pais-usuario">Brasil</div>
+                <p class="texto-usuario">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
+            </div>
+
+            <div class="area-bto"><button>VER TODOS</button></div>
+
         </div>
 
-        <div class="depoimento2">
-            <img src="images/depoi2.jpg" alt="Imagem rosto mulher 44 anos">
-            <h3 class="titulo-depoimentos">Depoimento2</h3>
-            <p class="texto-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dui ac sapien hendrerit lobortis sit amet.</p>
-        </div>
-
-        <div class="depoimento3">
-            <img src="images/depoi3.jpg" alt="Imagem rosto jovem">
-            <h3 class="titulo-depoimentos">Depoimento3</h3>
-            <p class="texto-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dui ac sapien hendrerit lobortis sit amet.</p>
-        </div>
     </section>
+
+
+    <!-- Newsletter -->
+
+    <section class="newsletter">
+
+        <div class="newsletter-area">
+            <div class="newsletter-area-left">
+                <h2 class="titu-newsletter">Newsletter</h2>
+                <p class="texto-newsletter">Assine a nossa Newsletter e seja o primeiro a receber as oportunidades mais recentes.</p>
+            </div>
+            <div class="assinar">
+                <form class="newsletter-form">
+                    <input type="text" id="assinar" class="assina-form" placeholder="Digite seu melhor e-mail">
+                    <input type="button" value="ASSINAR" class="newsletter-button">
+                </form>
+            </div>
+        </div>
+    
+    </section>
+    
+
 </main>
     
     <!-- Rodapé -->
-    <section>
-    <article>
-        <footer>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus dignissim ultricies.</p>
-        </footer>
-    </article>
+    <footer class="rodape">
+
+        <div class="rodape-area">
+            <div class="rodape-conteudos"><img src="images/logotipo.png" alt="Logotipo nomades"></div>
+            <div class="rodape-conteudos">
+                <h4 class="titulo-footer">Termos e Privacidade</h4>
+                <ul class="lista-footer">
+                    <li><a class="links-footer" href="#" target="_self">Termos de uso</a></li>
+                    <li><a class="links-footer" href="#" target="_self">Política de Cookies</a></li>
+                    <li><a class="links-footer" href="#" target="_self">Privacidade</a></li>
+                </ul>
+            </div>
+            <div class="rodape-conteudos">
+                <h4 class="titulo-footer">Canais para contato</h4>
+                <p>(84) 99640-1000</p>
+                <p>contato@nomadespelomundo.com.br</p>
+                <dic class="area-sociais">
+                    <div class="icone-sociais"><img src="images/sociais/face.png" alt="Logo facebook"></div>
+                    <div class="icone-sociais"><img src="images/sociais/insta.png" alt="Logo instagram"></div>
+                    <div class="icone-sociais"><img src="images/sociais/link.png" alt="Logo linkedin"></div>
+                    <div class="icone-sociais"><img src="images/sociais/whats.png" alt="Logo whatsapp"></div>
+                </dic>
+                
+            </div>
+        </div>
+
     </section>
 
 </body>
