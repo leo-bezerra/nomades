@@ -80,6 +80,8 @@
     transform: translateY(-5px);
   }
 
+/* MOBILE CELULAR */
+  
   @media screen and (max-width: 768px) {
     .box-usuario {
         flex-basis: calc(100% - 20px); 

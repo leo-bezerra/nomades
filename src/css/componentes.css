@@ -55,19 +55,19 @@ button {
     transform: translate(-50%, -50%);
 }
 
-/* Animação de rotação */
+/* Animação da rotação */
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
-/* Aplicar a animação de rotação ao ícone do globo */
+/* Animação de rotação ao ícone do globo */
 .loader .fa-earth-americas {
     animation: spin 2s linear infinite;
 }
 
 
-/* MOBILE */
+/* MOBILE CELULAR */
 
 @media screen and (max-width: 767px) {
 

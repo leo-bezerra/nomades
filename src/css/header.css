@@ -70,42 +70,9 @@
     margin-top: 5px;
 }
 
-@media screen and (max-width: 767px) {
 
-    .logo {
-        order: 1;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .buscar {
-        order: 2;
-        width: 100%;
-    }
-
-    .menu-toggle {
-        order: 3;
-        display: block;
-        cursor: pointer;
-        text-align: right;
-        font-size: 36px;
-        color: #BA845D;
-        position: absolute;
-        top: 0; /* Div no topo */
-        right: 0; /* Div a direira */
-        padding: 10px;
-    }
-
-    .menu-conteudos {
-        flex-wrap: wrap;
-    }
-}
-
-
-   /* BOTAO BUSCAR */
-  input[type="submit"] {
+ /* BOTAO BUSCAR */
+ input[type="submit"] {
     background: url("/assets/images/lupa.png") no-repeat center; 
     /*background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;*/
     background-size: contain; 
@@ -157,3 +124,42 @@
 .links:visited {
     color: #5C735E;
 }
+
+
+/* MOBILE CELULAR */
+
+@media screen and (max-width: 767px) {
+
+    .logo {
+        order: 1;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .buscar {
+        order: 2;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        order: 3;
+        display: block;
+        cursor: pointer;
+        text-align: right;
+        font-size: 36px;
+        color: #BA845D;
+        position: absolute;
+        top: 0; /* Div no topo */
+        right: 0; /* Div a direira */
+        padding: 10px;
+    }
+
+    .menu-conteudos {
+        flex-wrap: wrap;
+    }
+}
+
+
+  
