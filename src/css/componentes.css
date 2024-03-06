@@ -1,0 +1,84 @@
+.titulos-areas {
+    width: 100%;
+    display: block;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.0;
+    text-align: center;
+    color: #BA845D; 
+}
+
+.justificar-esquerda  {
+    text-align: left;
+}
+
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #7D4F2D;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.back-to-top:hover {
+    opacity: 0.7;
+}
+
+button {
+    padding: 20px 70px;
+    font-size: 1em;
+    background-color: #5C735E; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: transform 0.3s ease-out;
+  }
+
+ button:hover {
+    transform: translateY(-5px);
+  }
+
+/* Estilo do Skeleton page loading */
+.loader {
+    font-size: 100px; /* Tamanho do ícone */
+    position: absolute;
+    color: #7D4F2D;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Animação de rotação */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Aplicar a animação de rotação ao ícone do globo */
+.loader .fa-earth-americas {
+    animation: spin 2s linear infinite;
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 767px) {
+
+
+    .justificar-esquerda  {
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .justificar-esquerda, .titulos-areas  {
+        text-align: center;
+        font-size: 40px;
+    }
+}

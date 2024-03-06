@@ -1,0 +1,159 @@
+.area-menu {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(254, 247, 235, 0.95); 
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-conteudos {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 234px;
+    height: 72px;
+    margin-right: 40px;
+    flex: 1;
+}
+
+.menu {
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 30px;
+    flex: 2;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li {
+    margin-right: 30px;
+}
+
+.buscar {
+  width: 350px;
+  margin-top: 25px;
+  flex: 1;
+}
+
+.busca-form {
+  border: none;
+  border-bottom: 1px solid #BA845D;
+  padding: 8px;
+  width: 220px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.menu-toggle {
+    display: none;
+    align-self: flex-start;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .logo {
+        order: 1;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .buscar {
+        order: 2;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        order: 3;
+        display: block;
+        cursor: pointer;
+        text-align: right;
+        font-size: 36px;
+        color: #BA845D;
+        position: absolute;
+        top: 0; /* Div no topo */
+        right: 0; /* Div a direira */
+        padding: 10px;
+    }
+
+    .menu-conteudos {
+        flex-wrap: wrap;
+    }
+}
+
+
+   /* BOTAO BUSCAR */
+  input[type="submit"] {
+    background: url("/assets/images/lupa.png") no-repeat center; 
+    /*background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;*/
+    background-size: contain; 
+    width: 30px; 
+    height: 30px; 
+    border: none;
+    cursor: pointer;
+    text-indent: -9999px; 
+    transition: transform 0.3s ease-out;
+  }
+
+  input[type="submit"]:hover {
+    opacity: 0.8; 
+    transform: translateY(-5px);
+  }  
+
+/* LINKS MENU */
+
+.links {
+    position: relative;
+    color: #727673;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.links::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 6px;
+    background-color: #BA845D;
+    transition: width 0.4s; 
+}
+
+.links:hover::before {
+    width: 100%;
+}
+
+.links:focus {
+    color: #5C735E;
+}
+
+.links:active {
+    color: #BA845D;
+}
+
+.links:visited {
+    color: #5C735E;
+}

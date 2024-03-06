@@ -4,29 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Curso HTML e CSS | Projeto: Nômades pelo Mundo</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/image/favicons/favicon-16x16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="keywords" content="NÔMADES, VIAJANTES, VIAJAR">
     <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-6T8+rScN8x0m9tn5UJbkY1gS2j4KrU0Ujtr+YlF3umXV6b7WWNm7je28JJqQtPN3z9RU1a3XzHye0Zps78UIWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/7b7fd9adc7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/css/index.css">
+    
+
+    
 </head>
+
 
 <body>
 
 <!-- Topo -->
-<header class="area-menu">   
+<header class="area-menu animate__animated animate__fadeIn">   
     
     <div class="menu-conteudos">
         
         <div class="logo">    
-            <img src="images/logonomade.png" alt="Logo do site">
+            <img src="assets/images/logonomade.png" alt="Logo do site">
         </div>
         
         <nav class="menu">
             <ul>
                 <li><a class="links" href="#" target="_self">Home</a></li>
-                <li><a class="links" href="#" target="_self">Por onde começar?</a></li>
+                <li><a class="links" href="#juntesenos" target="_self">Junte-se a Nós</a></li>
                 <li><a class="links" href="#" target="_self">Dia a dia</a></li>
                 <li><a class="links" href="#" target="_self">Vagas Remotas</a></li>
             </ul>
@@ -38,6 +48,7 @@
                 <input type="text" id="search" name="search" class="busca-form" placeholder="Busque pelo país desejado">
                 <input type="submit" value="Buscar">
             </form>
+            <div class="menu-toggle">&#9776;</div>
         </div>
 
     </div>
@@ -45,17 +56,19 @@
 </header>
 
     <main>
+
     <!-- Banner topo -->
     <section class="area-banner">
         
         <div class="container-banner">
-            <img class="imagem-com-transparencia" src="images/banner-viajante.jpg" alt="Imagem de um viajante com mochila em outro país">
+            <img class="imagem-com-transparencia animate__animated animate__fadeInLeft" src="assets/images/banner-viajante.jpg" alt="Imagem de um viajante com mochila em outro país">
+            <img class="imagem-com-transparencia-m animate__animated animate__fadeInLeft" src="assets/images/mobile/banner-viajante.jpg" alt="Imagem de um viajante com mochila em outro país (mobile)">
         </div>
 
         
         <div class="conteudo-area-banner">
-            <h1>Por onde começar?</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed sodales tortor, et condimentum erat. In ac velit a quam sagittis cursus. Aenean dignissim.</p>
+            <h1 class="animate__animated animate__fadeInLeft">Por onde começar?</h1>
+            <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed sodales tortor, et condimentum erat. In ac velit a quam sagittis cursus. Aenean dignissim.</p>
             <button>SAIBA MAIS</button>
         </div>
     </section>
@@ -70,37 +83,37 @@
             <h2 class="titulos-areas justificar-esquerda">Vídeos</h2>
             <div class="linha"></div>
 
-            <div class="video-item caixa">
+            <div class="video-item caixa animate__animated animate__fadeInLeft">
                 <div class="video-player">
-                    <video poster="../nomades/images/ny.jpg" alt="Vista área cidade de Nova York">
-                    <source src="videos/video1.mp4" type="video/mp4">
+                    <video poster="assets/images/ny.jpg" alt="Vista área cidade de Nova York" class="img-video">
+                    <source src="assets/videos/ny.mp4" type="video/mp4">
                     </video>
-                    <div class="player-icon"></div>
+                    <div class="player-icon"><i class='bx bxs-videos'></i></div>
                 </div>
-                <h3 class="titulo-videos">Nova York, a cidade que não dorme</h3>
+                <h3 class="titulo-videos">Nova York, a cidade máquina que não dorme jamais</h3>
                 <p class="texto-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dui ac sapien hendrerit lobortis sit amet ut nisi. Quisque sit amet lacus eu lacus feugiat pulvinar.</p>
                 <a href="#" class="leia-mais">Leia mais <span class="arrow"><i class="fas fa-arrow-right"></i></span></a>
             </div>
             
             
-            <div class="video-item caixa">
+            <div class="video-item caixa animate__animated animate__fadeInDown">
                 <div class="video-player">
-                    <video poster="../nomades/images/praia.jpg" alt="Homem jovem usando notebook na praia" class="video-player">
-                    <source src="videos/video2.mp4" type="video/mp4">
+                    <video poster="assets/images/praia.jpg" alt="Homem jovem usando notebook na praia" class="img-video">
+                    <source src="assets/videos/praia.mp4" type="video/mp4">
                     </video>
-                    <div class="player-icon"></div>
+                    <div class="player-icon"><i class='bx bxs-videos'></i></div>
                 </div>
                 <h3 class="titulo-videos">Desafios enfrentados no processo de adaptação</h3>
                 <p class="texto-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dui ac sapien hendrerit lobortis sit amet ut nisi. Quisque sit amet lacus eu lacus feugiat pulvinar.</p>
                 <a href="#" class="leia-mais">Leia mais <span class="arrow"><i class="fas fa-arrow-right"></i></span></a>
             </div>
     
-            <div class="video-item caixa">
+            <div class="video-item caixa video-item caixa animate__animated animate__fadeInRight">
                 <div class="video-player">
-                    <video poster="../nomades/images/npc.jpg" alt="Mulheres trabalhando em um café usando notebboks" class="video-player">
-                    <source src="videos/video3.mp4" type="video/mp4">
+                    <video poster="assets/images/npc.jpg" alt="Mulheres trabalhando em um café usando notebboks" class="img-video">
+                    <source src="assets/videos/npc.mp4" type="video/mp4">
                     </video>
-                    <div class="player-icon"></div>
+                    <div class="player-icon"><i class='bx bxs-videos'></i></div>
                 </div>
                 <h3 class="titulo-videos">Comunidades brasileiras em países europeus</h3>
                 <p class="texto-video">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dui ac sapien hendrerit lobortis sit amet ut nisi. Quisque sit amet lacus eu lacus feugiat pulvinar.</p>
@@ -114,10 +127,10 @@
 
     <!-- Sobre -->
 
-    <section class="area-sobre">
+    <section class="area-sobre animate__animated animate__fadeInRight">
 
         <div class="left-sobre">
-            <img src="images/mochila.png" alt="Imagem de uma mochila" class="mochila-sobre">
+            <img src="assets/images/mochila.png" alt="Imagem de uma mochila" class="mochila-sobre">
         </div>
         <div class="conteudo-sobre">
             <div class="right-sobre">
@@ -130,51 +143,49 @@
     </section>
   
     <!-- Depoimentos -->
-
-    <section class="juntese">
+    <div id="juntesenos"></div>
+    <section class="juntese animate__animated animate__fadeInLeft">
 
         <div class="juntese-area">
 
             <h2 class="titulos-areas">Junte-se a Nós</h2>     
 
             <div class="box-usuario">
-                <img src="images/juntese/1.png" alt="Imagem usuário" class="img-usuario">
-                <div class="nome-usuario">Nome Usuário</div>
-                <div class="pais-usuario">Brasil</div>
-                <p class="texto-usuario">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
+                <img src="assets/images/juntese/1.png" alt="Imagem usuário" class="img-usuario">
+                <div class="nome-usuario">Adriana Cristine</div>
+                <div class="pais-usuario">Portugal</div>
+                <p class="texto-usuario">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
 
             <div class="box-usuario">
-                <img src="images/juntese/2.png" alt="Imagem usuário" class="img-usuario">
-                <div class="nome-usuario">Nome Usuário</div>
-                <div class="pais-usuario">Brasil</div>
-                <p class="texto-usuario">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
+                <img src="assets/images/juntese/2.png" alt="Imagem usuário" class="img-usuario">
+                <div class="nome-usuario">Luciana Tumbiolo</div>
+                <div class="pais-usuario">Itália</div>
+                <p class="texto-usuario">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut eiusmod tempor incididunt ut  </p>
             </div>
 
             <div class="box-usuario">
-                <img src="images/juntese/3.png" alt="Imagem usuário" class="img-usuario">
-                <div class="nome-usuario">Nome Usuário</div>
-                <div class="pais-usuario">Brasil</div>
-                <p class="texto-usuario">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
+                <img src="assets/images/juntese/3.png" alt="Imagem usuário" class="img-usuario">
+                <div class="nome-usuario">Filipe Campos</div>
+                <div class="pais-usuario">Estados Unidos</div>
+                <p class="texto-usuario">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut consectetur adipiscing elit </p>
             </div>
 
             <div class="box-usuario">
-                <img src="images/juntese/4.png" alt="Imagem usuário" class="img-usuario">
-                <div class="nome-usuario">Nome Usuário</div>
-                <div class="pais-usuario">Brasil</div>
-                <p class="texto-usuario">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
+                <img src="assets/images/juntese/4.png" alt="Imagem usuário" class="img-usuario">
+                <div class="nome-usuario">Débora Coderhouse</div>
+                <div class="pais-usuario">Inglaterra</div>
+                <p class="texto-usuario">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolor sit amet, consectetur </p>
             </div>
-
-            <div class="area-bto"><button>VER TODOS</button></div>
-
         </div>
+        <div class="area-bto"><button>VER TODOS</button></div>
 
     </section>
 
 
     <!-- Newsletter -->
 
-    <section class="newsletter">
+    <section class="newsletter area-sobre animate__animated animate__fadeInRight">
 
         <div class="newsletter-area">
             <div class="newsletter-area-left">
@@ -198,9 +209,9 @@
     <footer class="rodape">
 
         <div class="rodape-area">
-            <div class="rodape-conteudos"><img src="images/logotipo.png" alt="Logotipo nomades"></div>
+            <div class="rodape-conteudos"><img src="assets/images/logotipo.png" alt="Logotipo nomades"></div>
             <div class="rodape-conteudos">
-                <h4 class="titulo-footer">Termos e Privacidade</h4>
+                <h4 class="titulo-footer termos">Termos e Privacidade</h4>
                 <ul class="lista-footer">
                     <li><a class="links-footer" href="#" target="_self">Termos de uso</a></li>
                     <li><a class="links-footer" href="#" target="_self">Política de Cookies</a></li>
@@ -208,20 +219,57 @@
                 </ul>
             </div>
             <div class="rodape-conteudos">
-                <h4 class="titulo-footer">Canais para contato</h4>
+                <h4 class="titulo-footer canais">Canais para contato</h4>
                 <p>(84) 99640-1000</p>
                 <p>contato@nomadespelomundo.com.br</p>
                 <dic class="area-sociais">
-                    <div class="icone-sociais"><img src="images/sociais/face.png" alt="Logo facebook"></div>
-                    <div class="icone-sociais"><img src="images/sociais/insta.png" alt="Logo instagram"></div>
-                    <div class="icone-sociais"><img src="images/sociais/link.png" alt="Logo linkedin"></div>
-                    <div class="icone-sociais"><img src="images/sociais/whats.png" alt="Logo whatsapp"></div>
+                    <div class="icone-sociais"><img src="assets/images/sociais/face.png" alt="Logo facebook"></div>
+                    <div class="icone-sociais"><img src="assets/images/sociais/insta.png" alt="Logo instagram"></div>
+                    <div class="icone-sociais"><img src="assets/images/sociais/link.png" alt="Logo linkedin"></div>
+                    <div class="icone-sociais"><img src="assets/images/sociais/whats.png" alt="Logo whatsapp"></div>
                 </dic>
                 
             </div>
         </div>
 
     </section>
+    
+    <!-- Voltar para o topo -->
+    
+    <a href="#" class="back-to-top"><span class="material-icons">flight</span></a> 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('.back-to-top').fadeIn();
+                } else {
+                    $('.back-to-top').fadeOut();
+                }
+            });
+    
+            $('.back-to-top').click(function() {
+                $('html, body').animate({scrollTop: 0}, 800);
+                return false;
+            });
+        });
+    </script>
+    
+
+    <!-- Skeleton page loading -->
+    <div class="loader">
+        <i class="fa-solid fa-earth-americas"></i>
+    </div>
+    
+
+    <script>
+        // Remove o load após 3 segundos de carregamento
+        setTimeout(function() {
+            document.querySelector('.loader').classList.remove('loader');
+        }, 3000);
+    </script>
+
 
 </body>
 

@@ -1,0 +1,123 @@
+.area-sobre {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .conteudo-sobre {
+    width: 100%;
+    height: 500px;
+    background-color: #5C735E;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .left-sobre {
+    background-color: #BA845D; 
+    width: 30%; 
+    position: absolute;
+    left: 0; 
+    z-index: 3; 
+    height: 600px;
+  }
+  
+  .right-sobre {
+    width: 46%; 
+    position: absolute;
+    left: 30%; 
+    z-index: 2; 
+    height: 500px;
+    padding-left: 14%;
+    display: flex; 
+    justify-content: center; /* Alinhando no centro horizontal */
+    align-items: left;
+    flex-direction: column; /* Para que as divs fiquem abaixo uma da outra */
+  }
+  
+  .titu-sobre {
+    color: #F1ECE3;
+    font-size: 38px;
+    width: 500px;
+    float: left;
+  }
+  
+  .right-sobre p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: -20px;
+    width: 400px;
+    color: #FFF;
+    padding-right: 200px;
+  }
+  
+  /* Perguntar porque o botão completou toda área e no banner não */
+  .right-sobre button {
+    padding: 20px 70px;
+    font-size: 1em;
+    background-color: #BA845D; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-out;
+    width: 230px; 
+  }
+  
+  .right-sobre button:hover {
+    transform: translateY(-5px);
+  }
+  
+  .mochila-sobre {
+    margin-top: 65px;
+    position: absolute;
+    left: 40%; 
+    animation: rotateMochila 2s linear infinite alternate;
+    transform-origin: top;
+  }
+  
+  @keyframes rotateMochila {
+    0% {
+      transform: rotate(-5deg); /* Rotação inicial */
+    }
+    100% {
+      transform: rotate(5deg); /* Rotação final */
+    }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .mochila-sobre, .left-sobre {
+      display: none;
+    }
+
+    .right-sobre {
+      width: 100%;
+      left: 0;
+      padding-left: 50px;
+    }
+
+    .left-sobre {
+      width: 100%;
+    }
+
+    .titu-sobre {
+      color: #F1ECE3;
+      font-size: 30px;
+      width: 80%;
+    }
+
+    .right-sobre p {
+      font-size: 18px;
+      width: 80%;
+      padding-right: 0px;
+      overflow: hidden;
+    }
+
+    .conteudo-sobre {
+      width: 100%;
+      background-color: #5C735E;
+      overflow: hidden;
+    }
+}
