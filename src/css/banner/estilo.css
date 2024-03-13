@@ -17,7 +17,7 @@
 
   position: relative;
   overflow: hidden;
-  background: hsl(0 0% 90%);
+  background-color: #405040;
 
   box-sizing: border-box;
 }
