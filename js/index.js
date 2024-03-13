@@ -1,6 +1,4 @@
-function toggleMenu() {
-    var menuToggle = document.querySelector('.menu-toggle');
-    var menu = document.querySelector('.menu');
-
-    menu.classList.toggle('active');
-}
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    document.getElementById('menu').classList.toggle('menu-open');
+  });
+  
